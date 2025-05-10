@@ -119,7 +119,7 @@ appium driver list --installed
 
 ---
 
-## ▶️ How to Run the Tests
+## How to Run the Tests
 
 Start the emulator:
 ```bash
@@ -133,18 +133,10 @@ npm run android:test
 
 ---
 
-## 📊 Test Execution Report
+## Test Execution Report
 
 Allure report is hosted via GitHub Pages:
-👉 [Click to view test report](https://azeezaalimi.github.io/HomeChallengeAAlimi/reports/mobile-e2e/index.html)
-
-> If it doesn't open, ensure GitHub Pages is enabled and set to deploy from the `docs/` folder in repository settings.
-
----
-
-## 🐳 Docker Support (Optional Bonus)
-
-You can containerize the test framework using Docker for CI/CD or isolated runs.
+https://azeezaalimi.github.io/HomeChallengeAAlimi/reports/mobile-e2e/index.html
 
 ---
 
