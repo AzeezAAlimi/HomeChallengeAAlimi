@@ -175,3 +175,7 @@ appium driver install xcuitest
 ```
 
 > Note: iOS automation requires a macOS machine with Xcode installed.
+
+📊 **Test Report**
+
+View the latest test execution report [here](./reports/mobile-e2e/index.html).
