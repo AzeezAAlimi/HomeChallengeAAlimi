@@ -140,7 +140,7 @@ https://azeezaalimi.github.io/HomeChallengeAAlimi/reports/mobile-e2e/index.html
 
 ---
 
-## ✅ Summary
+## Summary
 - Tests 3 core E2E flows in Monefy
 - Scalable, clean structure using POM
 - Easily extendable for more scenarios
