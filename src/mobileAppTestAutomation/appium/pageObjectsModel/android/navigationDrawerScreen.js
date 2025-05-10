@@ -6,7 +6,7 @@ class NavigationDrawerScreen {
   }
 
   get accountSpinner() {
-    return $('//*[@resource-id="com.monefy.app.lite:id/account_spinner"]');
+    return $('//*[@resource-id="com.monefy.app.lite:id/icon"]');
   }
 
   async open() {

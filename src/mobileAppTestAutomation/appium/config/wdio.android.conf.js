@@ -30,6 +30,7 @@ config.capabilities = [
       process.cwd(),
       "src/mobileAppTestAutomation/appium/app/android/Monefy.apk"
     ),
+    "appium:autoGrantPermissions": true,
     // "appium:autoGrantPermissions": true,
     // "appium:platformName": "Android",
     // "appium:platformVersion": "16.0",
