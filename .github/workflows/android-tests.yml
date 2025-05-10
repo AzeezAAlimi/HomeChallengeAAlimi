@@ -32,10 +32,10 @@ jobs:
           emulator-options: -no-snapshot -no-audio -no-window
           disable-animations: true
           script: |
+            adb devices
             npm install -g appium
-            npm install -g appium-doctor
-            npm run appium &  # custom script to start appium in background
-            sleep 10          # give appium time to initialize
+            appium --base-path /wd/hub --log-level error &
+            sleep 15
             npx wdio run src/mobileAppTestAutomation/appium/config/wdio.android.conf.js
 
       - name: Generate Allure Report

@@ -22,8 +22,7 @@ config.capabilities = [
   {
     // capabilities for local Appium web tests on an Android Emulator
     "appium:platformName": "Android",
-    "appium:platformVersion": "16.0",
-    "appium:deviceName": "Pixel 7 Pro",
+    "appium:deviceName": "emulator-5554",
     "appium:automationName": "UiAutomator2",
     "appium:appPackage": "com.monefy.app.lite",
     "appium:appActivity": "com.monefy.activities.main.MainActivity_",
@@ -31,7 +30,18 @@ config.capabilities = [
       process.cwd(),
       "src/mobileAppTestAutomation/appium/app/android/Monefy.apk"
     ),
-    "appium:autoGrantPermissions": true,
+    // "appium:autoGrantPermissions": true,
+    // "appium:platformName": "Android",
+    // "appium:platformVersion": "16.0",
+    // "appium:deviceName": "Pixel 7 Pro", //
+    // "appium:automationName": "UiAutomator2",
+    // "appium:appPackage": "com.monefy.app.lite",
+    // "appium:appActivity": "com.monefy.activities.main.MainActivity_",
+    // "appium:app": join(
+    //   process.cwd(),
+    //   "src/mobileAppTestAutomation/appium/app/android/Monefy.apk"
+    // ),
+    // "appium:autoGrantPermissions": true,
   },
 ];
 
