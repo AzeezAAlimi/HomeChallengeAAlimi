@@ -178,4 +178,4 @@ appium driver install xcuitest
 
 📊 **Test Report**
 
-View the latest test execution report [here](./reports/mobile-e2e/index.html).
+You can view the full Allure test report [here](https://azeezaalimi.github.io/HomeChallengeAAlimi/reports/mobile-e2e/index.html).
