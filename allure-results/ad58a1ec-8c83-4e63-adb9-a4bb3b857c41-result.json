@@ -1,1 +1,20 @@
-{"uuid":"ad58a1ec-8c83-4e63-adb9-a4bb3b857c41","historyId":"4372c549230899ce4a5ff795e1677d29","status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"device","value":"Pixel 7 Pro"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"wdio"},{"name":"thread","value":"0-0"}],"links":[],"start":1746883141888,"name":"currencyCurrency: Convert balance amount from Pound Sterling to Euro","testCaseId":"4372c549230899ce4a5ff795e1677d29","stop":1746883190181}
+{
+  "uuid": "ad58a1ec-8c83-4e63-adb9-a4bb3b857c41",
+  "historyId": "4372c549230899ce4a5ff795e1677d29",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [{ "name": "device", "value": "Pixel 7 Pro" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "wdio" },
+    { "name": "thread", "value": "0-0" }
+  ],
+  "links": [],
+  "start": 1746883141888,
+  "name": "currencyCurrency: Convert balance amount from Pound Sterling to Euro",
+  "testCaseId": "4372c549230899ce4a5ff795e1677d29",
+  "stop": 1746883190181
+}

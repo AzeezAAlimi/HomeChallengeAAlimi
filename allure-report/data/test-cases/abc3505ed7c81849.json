@@ -1,1 +1,33 @@
-{"uid":"abc3505ed7c81849","name":"addIncome: Add a $1,000,000 income successfully","historyId":"3a4af99cecb8478408767887231ad386","time":{"start":1746883296889,"stop":1746883316694,"duration":19805},"status":"passed","flaky":false,"newFailed":false,"newBroken":false,"newPassed":false,"retriesCount":0,"retriesStatusChange":false,"beforeStages":[],"afterStages":[],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"wdio"},{"name":"thread","value":"0-3"},{"name":"resultFormat","value":"allure2"}],"parameters":[{"name":"device","value":"Pixel 7 Pro"}],"links":[],"hidden":false,"retry":false,"extra":{"severity":"normal","retries":[],"categories":[],"tags":[]},"source":"abc3505ed7c81849.json","parameterValues":["Pixel 7 Pro"]}
+{
+  "uid": "abc3505ed7c81849",
+  "name": "addIncome: Add a $1,000,000 income successfully",
+  "historyId": "3a4af99cecb8478408767887231ad386",
+  "time": { "start": 1746883296889, "stop": 1746883316694, "duration": 19805 },
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [],
+  "afterStages": [],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "wdio" },
+    { "name": "thread", "value": "0-3" },
+    { "name": "resultFormat", "value": "allure2" }
+  ],
+  "parameters": [{ "name": "device", "value": "Pixel 7 Pro" }],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "abc3505ed7c81849.json",
+  "parameterValues": ["Pixel 7 Pro"]
+}

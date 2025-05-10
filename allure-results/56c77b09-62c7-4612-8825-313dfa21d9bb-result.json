@@ -1,1 +1,20 @@
-{"uuid":"56c77b09-62c7-4612-8825-313dfa21d9bb","historyId":"84f954b30735493a78269c23bc34adbd","status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"device","value":"Pixel 7 Pro"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"wdio"},{"name":"thread","value":"0-2"}],"links":[],"start":1746883252709,"name":"addAndDeleteExpense: Add and delete $500 expense for clothes","testCaseId":"84f954b30735493a78269c23bc34adbd","stop":1746883279801}
+{
+  "uuid": "56c77b09-62c7-4612-8825-313dfa21d9bb",
+  "historyId": "84f954b30735493a78269c23bc34adbd",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [{ "name": "device", "value": "Pixel 7 Pro" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "wdio" },
+    { "name": "thread", "value": "0-2" }
+  ],
+  "links": [],
+  "start": 1746883252709,
+  "name": "addAndDeleteExpense: Add and delete $500 expense for clothes",
+  "testCaseId": "84f954b30735493a78269c23bc34adbd",
+  "stop": 1746883279801
+}

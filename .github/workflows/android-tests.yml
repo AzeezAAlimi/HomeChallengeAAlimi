@@ -28,13 +28,29 @@ jobs:
           api-level: 30
           target: default
           arch: x86_64
-          emulator-options: -no-snapshot -no-audio -no-window
+          emulator-options: -no-snapshot -no-audio -no-window -accel off
           disable-animations: true
           script: |
-            adb devices
+            echo "Waiting for emulator to boot..."
+            boot_completed=""
+            timeout=120
+            while [ "$boot_completed" != "1" ] && [ $timeout -gt 0 ]; do
+              boot_completed=$(adb -s emulator-5554 shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')
+              echo "Waiting... ($timeout seconds left)"
+              sleep 5
+              timeout=$((timeout - 5))
+            done
+            if [ "$boot_completed" != "1" ]; then
+              echo "Emulator failed to boot"
+              exit 1
+            fi
+
+            echo "Installing and starting Appium"
             npm install -g appium
             appium --base-path /wd/hub --log-level error &
             sleep 15
+
+            echo "Running tests"
             npx wdio run src/mobileAppTestAutomation/appium/config/wdio.android.conf.js
 
       - name: Generate Allure Report

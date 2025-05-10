@@ -1,1 +1,20 @@
-{"uuid":"7d2310c4-fe23-4d25-8317-06fd95769afd","historyId":"e11d56aa3dfacd22abc759453ae8a741","status":"passed","statusDetails":{},"stage":"finished","steps":[],"attachments":[],"parameters":[{"name":"device","value":"Pixel 7 Pro"}],"labels":[{"name":"language","value":"javascript"},{"name":"framework","value":"wdio"},{"name":"thread","value":"0-1"}],"links":[],"start":1746883208224,"name":"switchCurrency: Change currency from US Dollar to Pound Sterling","testCaseId":"e11d56aa3dfacd22abc759453ae8a741","stop":1746883236618}
+{
+  "uuid": "7d2310c4-fe23-4d25-8317-06fd95769afd",
+  "historyId": "e11d56aa3dfacd22abc759453ae8a741",
+  "status": "passed",
+  "statusDetails": {},
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [{ "name": "device", "value": "Pixel 7 Pro" }],
+  "labels": [
+    { "name": "language", "value": "javascript" },
+    { "name": "framework", "value": "wdio" },
+    { "name": "thread", "value": "0-1" }
+  ],
+  "links": [],
+  "start": 1746883208224,
+  "name": "switchCurrency: Change currency from US Dollar to Pound Sterling",
+  "testCaseId": "e11d56aa3dfacd22abc759453ae8a741",
+  "stop": 1746883236618
+}

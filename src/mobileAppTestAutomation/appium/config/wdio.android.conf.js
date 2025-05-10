@@ -31,6 +31,9 @@ config.capabilities = [
       "src/mobileAppTestAutomation/appium/app/android/Monefy.apk"
     ),
     "appium:autoGrantPermissions": true,
+    "appium:ignoreHiddenApiPolicyError": true,
+    "appium:adbExecTimeout": 60000,
+    "appium:uiautomator2ServerInstallTimeout": 60000
     // "appium:autoGrantPermissions": true,
     // "appium:platformName": "Android",
     // "appium:platformVersion": "16.0",
