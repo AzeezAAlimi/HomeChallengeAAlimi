@@ -17,30 +17,26 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Appium
-        run: npm install -g appium
-
-      - name: Install Appium Doctor (optional health check)
-        run: npm install -g appium-doctor
-
-      - name: Install Android SDK dependencies
+      - name: Run Android tests on emulator
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 30
           target: default
           arch: x86_64
-          force-avd-creation: true
+          profile: Pixel_5
           emulator-options: -no-snapshot -no-audio -no-window
           disable-animations: true
-          script: echo "Android emulator setup complete"
-
-      - name: Run Android tests with WebdriverIO
-        run: npx wdio run src/mobileAppTestAutomation/appium/config/wdio.android.conf.js
+          script: |
+            npm install -g appium
+            npm install -g appium-doctor
+            npm run appium &  # custom script to start appium in background
+            sleep 10          # give appium time to initialize
+            npx wdio run src/mobileAppTestAutomation/appium/config/wdio.android.conf.js
 
       - name: Generate Allure Report
         run: |
