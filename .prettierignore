@@ -1,0 +1,3 @@
+# .prettierignore
+wdio.android.conf.js
+wdio.shared.conf.js

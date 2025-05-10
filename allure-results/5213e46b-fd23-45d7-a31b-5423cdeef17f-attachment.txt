@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//android.widget.ExpandableListView[@resource-id=\"com.monefy.app.lite:id/expandableListViewTransactions\"]/android.widget.LinearLayout"
+}
