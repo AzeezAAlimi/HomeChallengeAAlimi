@@ -137,11 +137,3 @@ npm run android:test
 
 Allure report is hosted via GitHub Pages:
 https://azeezaalimi.github.io/HomeChallengeAAlimi/reports/mobile-e2e/index.html
-
----
-
-## Summary
-- Tests 3 core E2E flows in Monefy
-- Scalable, clean structure using POM
-- Easily extendable for more scenarios
-- Includes hosted test execution report
