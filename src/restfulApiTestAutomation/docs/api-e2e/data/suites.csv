@@ -1,5 +1,5 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","13","Delete - DELETE /pet/{id}","","Sun May 11 19:19:31 CEST 2025","passed","Sun May 11 19:19:31 CEST 2025","CRUD for /pet","crudPetApi.spec.ts","",""
 "","87","Create - POST /pet","","Sun May 11 19:19:31 CEST 2025","passed","Sun May 11 19:19:31 CEST 2025","CRUD for /pet","crudPetApi.spec.ts","",""
-"","19","Read - GET /pet/{id}","","Sun May 11 19:19:31 CEST 2025","passed","Sun May 11 19:19:31 CEST 2025","CRUD for /pet","crudPetApi.spec.ts","",""
 "","23","Update - PUT /pet","","Sun May 11 19:19:31 CEST 2025","passed","Sun May 11 19:19:31 CEST 2025","CRUD for /pet","crudPetApi.spec.ts","",""
+"","13","Delete - DELETE /pet/{id}","","Sun May 11 19:19:31 CEST 2025","passed","Sun May 11 19:19:31 CEST 2025","CRUD for /pet","crudPetApi.spec.ts","",""
+"","19","Read - GET /pet/{id}","","Sun May 11 19:19:31 CEST 2025","passed","Sun May 11 19:19:31 CEST 2025","CRUD for /pet","crudPetApi.spec.ts","",""
