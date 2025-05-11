@@ -37,7 +37,7 @@ Based on exploratory testing, the 3 most critical end-to-end user flows automate
 4. **Currency Conversion**
 5. **Switch Currency**
 
-These flows cover the most frequently used core functionalities in Monefy.
+These flows cover the most frequently used core functionalities in Monefy
 
 ---
 
@@ -146,8 +146,6 @@ https://azeezaalimi.github.io/HomeChallengeAAlimi/reports/mobile-e2e/index.html
 
 ## RESTful API Test Automation
 
-Tests CRUD operations against the Swagger Petstore API
-
 ### Tech Stack
 - **Playwright**
 - **Allure Reporter**
@@ -170,12 +168,15 @@ Generate Allure report:
 npx allure generate allure-results --clean -o reports/api-e2e
 ```
 
-### API Report
-
 Open locally:
 ```bash
 npx allure open reports/api-e2e
 ```
+
+### API Report
+
+Allure report is hosted via GitHub Pages:
+https://azeezaalimi.github.io/HomeChallengeAAlimi/reports/mobile-e2e/index.html
 
 ---
 
