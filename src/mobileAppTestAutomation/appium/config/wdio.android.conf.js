@@ -1,5 +1,5 @@
 const { join, resolve } = require("path");
-const { config } = require("../config/wdio.shared.conf");
+const { config } = require("./wdio.shared.conf");
 
 // ====================
 // Runner Configuration

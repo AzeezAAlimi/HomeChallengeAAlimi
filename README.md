@@ -149,7 +149,7 @@ https://azeezaalimi.github.io/HomeChallengeAAlimi/reports/mobile-e2e/index.html
 ### Tech Stack
 - **Playwright**
 - **Allure Reporter**
-- **Organized by Domain (e.g., /pet)**
+- **Organized by Domain (/pet)**
 
 ### How to Run
 

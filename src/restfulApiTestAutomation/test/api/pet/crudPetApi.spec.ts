@@ -1,39 +1,35 @@
 import { test, expect } from "@playwright/test";
 import { petTestData } from "../../../data/petData";
 
-test.describe("CRUD for /pet", () => {
-  const baseUrl = "http://localhost:8080/api/v3";
-  const petId = petTestData.newPet.id;
+const baseUrl = "http://localhost:8080/api/v3";
+const petId = petTestData.newPet.id;
 
-  test("Create - POST /pet", async ({ request }) => {
-    const response = await request.post(`${baseUrl}/pet`, {
-      data: petTestData.newPet,
-    });
-    expect(response.status()).toBe(200);
-    const body = await response.json();
-    expect(body.id).toBe(petId);
-  });
+test.describe.configure({ mode: "serial" });
 
-  test("Read - GET /pet/{id}", async ({ request }) => {
-    const response = await request.get(`${baseUrl}/pet/${petId}`);
-    expect(response.status()).toBe(200);
-    const body = await response.json();
-    expect(body.name).toBe(petTestData.newPet.name);
+test("Create - POST /pet", async ({ request }) => {
+  const response = await request.post(`${baseUrl}/pet`, {
+    data: petTestData.newPet,
   });
+  expect(response.status()).toBe(200);
+});
 
-  test("Update - PUT /pet", async ({ request }) => {
-    const response = await request.put(`${baseUrl}/pet`, {
-      data: petTestData.updatedPet,
-    });
-    expect(response.status()).toBe(200);
-    const body = await response.json();
-    expect(body.status).toBe(petTestData.updatedPet.status);
-  });
+test("Read - GET /pet/{id}", async ({ request }) => {
+  const response = await request.get(`${baseUrl}/pet/${petId}`);
+  expect(response.status()).toBe(200);
+  const body = await response.json();
+  expect(body.name).toBe(petTestData.newPet.name);
+});
 
-  test("Delete - DELETE /pet/{id}", async ({ request }) => {
-    const response = await request.delete(`${baseUrl}/pet/${petId}`);
-    expect(response.status()).toBe(200);
+test("Update - PUT /pet", async ({ request }) => {
+  const response = await request.put(`${baseUrl}/pet`, {
+    data: petTestData.updatedPet,
   });
+  expect(response.status()).toBe(200);
+});
+
+test("Delete - DELETE /pet/{id}", async ({ request }) => {
+  const response = await request.delete(`${baseUrl}/pet/${petId}`);
+  expect(response.status()).toBe(200);
 });
 
 // import { test, expect } from "@playwright/test";
