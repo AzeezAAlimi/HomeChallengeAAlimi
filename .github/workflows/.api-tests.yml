@@ -8,8 +8,19 @@ jobs:
   api-tests:
     runs-on: ubuntu-latest
 
+    services:
+      petstore:
+        image: swaggerapi/petstore3
+        ports:
+          - 8080:8080
+        options: >-
+          --health-cmd="curl -f http://localhost:8080/api/v3/openapi.json || exit 1"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=5
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Node.js
