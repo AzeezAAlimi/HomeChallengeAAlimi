@@ -1,7 +1,9 @@
-name: API Tests with Allure Report
+name: Run API Tests
 
 on:
   push:
+    branches: [main]
+  pull_request:
     branches: [main]
 
 jobs:
@@ -10,35 +12,37 @@ jobs:
 
     services:
       petstore:
-        image: swaggerapi/petstore3
+        image: swaggerapi/petstore3:unstable
         ports:
           - 8080:8080
         options: >-
-          --health-cmd="curl -f http://localhost:8080/api/v3/openapi.json || exit 1"
-          --health-interval=10s
-          --health-timeout=5s
-          --health-retries=5
+          --health-cmd "curl --fail http://localhost:8080/api/v3/pet || exit 1"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "20"
+          node-version: 20
 
       - name: Install dependencies
-        run: cd src/restfulApiTestAutomation && npm install
+        run: npm install
 
       - name: Run Playwright API tests
-        run: cd src/restfulApiTestAutomation && npx playwright test
+        run: npx playwright test --config=src/restfulApiTestAutomation/config/playwright.config.ts
 
-      - name: Generate Allure Report
-        run: cd src/restfulApiTestAutomation && npx allure generate --clean -o ../../reports/api-e2e
+      - name: Generate Allure report
+        run: |
+          npx allure generate src/restfulApiTestAutomation/allure-results --clean -o reports/api-e2e
 
       - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./reports/api-e2e
+          destination_dir: reports/api-e2e
