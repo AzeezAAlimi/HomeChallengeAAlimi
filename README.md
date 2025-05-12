@@ -13,7 +13,7 @@ https://github.com/AzeezAAlimi/HomeChallengeAAlimi/blob/main/src/exploratoryTest
 ## Test Automation Framework
 
 ### Tech Stack
-- **WebdriverIO**: Flexible and scalable test runner
+- **WebdriverIO**: Test runner
 - **Appium**: Mobile automation engine
 - **Mocha**: Test framework
 - **Allure Reporter**: Rich test reporting
@@ -149,7 +149,7 @@ https://azeezaalimi.github.io/HomeChallengeAAlimi/reports/mobile-e2e/index.html
 ### Tech Stack
 - **Playwright**
 - **Allure Reporter**
-- **Organized by Domain (/pet)**
+- **Swagger Petstore**
 
 ### How to Run
 

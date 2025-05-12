@@ -22,7 +22,7 @@ Conduct an exploratory testing session on the Monefy Android app to identify key
 * **Using:** UI interactions and a range of input values (e.g. typical salary inputs)
 * **To Discover:** Issues with adding, viewing, or updating income entries in different scenarios
 * **Priority:** High
-* **Reasoning:** Core feature for tracking finances and monitoring total income
+* **Reasoning:** This is a core feature for tracking finances and monitoring total income
 
 ### 3. Transfer Between Accounts
 
@@ -63,7 +63,7 @@ Conduct an exploratory testing session on the Monefy Android app to identify key
 ### 1. App Crashes When Switching Currencies Quickly
 
 * **Device:** Samsung S5 - Android 6.0.1
-* **Steps:** Go to Settings > Currency > Quickly toggle between currencies (e.g. Pounds Sterling and Swedish SEK)
+* **Steps:** Go to Settings > Currency > Quickly switch between currencies (e.g. Pounds Sterling and Swedish SEK)
 * **Severity:** Major
 
 ### 2. App Crashes When Internet Connection Is Lost
@@ -98,12 +98,12 @@ Conduct an exploratory testing session on the Monefy Android app to identify key
 ### 1. Data Loss
 
 * **Description:** Manual deletion of transactions could lead to permanent data loss without warning
-* **Mitigation:** Add undo functionality or a confirmation dialog upon deletion
+* **Mitigation:** Add the undo functionality or a confirmation dialog upon deletion
 
 ### 2. Incorrect Financial Data
 
 * **Description:** Bugs in transfer or balance calculations may mislead users on available funds
-* **Mitigation:** Implement input validations, transaction logging, and alert users when a failure occurs
+* **Mitigation:** Implement validations for input, transaction logging, and alert users when a failure occurs
 
 ### 3. Compatibility Issues
 
@@ -113,4 +113,4 @@ Conduct an exploratory testing session on the Monefy Android app to identify key
 ### 4. Currency Conversion Failures
 
 * **Description:** Issues during currency switching or failed conversions could confuse users
-* **Mitigation:** Add graceful fallbacks, loading indicators, and error messages for failed currency changes
+* **Mitigation:** Add fallback, loading indicators, and error messages for failed currency changes
