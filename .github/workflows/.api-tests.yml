@@ -2,37 +2,32 @@ name: API Tests with Allure Report
 
 on:
   push:
-    paths:
-      - 'src/restfulApiTestAutomation/**'
-      - '.github/workflows/api-tests.yml'
-  pull_request:
+    branches: [main]
 
 jobs:
   api-tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repo
         uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: "20"
 
       - name: Install dependencies
-        run: npm install
+        run: cd src/restfulApiTestAutomation && npm install
 
-      - name: Run API tests
-        run: npx playwright test --config=src/restfulApiTestAutomation/config/playwright.config.ts
+      - name: Run Playwright API tests
+        run: cd src/restfulApiTestAutomation && npx playwright test
 
-      - name: Generate Allure report
-        run: |
-          npx allure generate src/restfulApiTestAutomation/allure-results --clean -o reports/api-e2e
+      - name: Generate Allure Report
+        run: cd src/restfulApiTestAutomation && npx allure generate --clean -o ../../reports/api-e2e
 
-      - name: Deploy Allure report to GitHub Pages
+      - name: Deploy Allure Report to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./reports/api-e2e
-          destination_dir: reports/api-e2e
