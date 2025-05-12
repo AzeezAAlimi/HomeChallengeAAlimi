@@ -160,7 +160,7 @@ docker run --name swaggerapi-petstore3 -d -p 8080:8080 swaggerapi/petstore3:unst
 
 Run API tests:
 ```bash
-npx playwright test --config=./src/restfulApiTestAutomation/config/playwright.config.ts
+npx playwright test
 ```
 
 Generate Allure report:

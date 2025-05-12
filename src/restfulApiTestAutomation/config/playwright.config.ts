@@ -4,7 +4,7 @@ export default defineConfig({
   testDir: "../../test/api/pet",
   testMatch: "**/*.spec.ts",
    fullyParallel: false,
-  reporter: [["list"], ["allure-playwright"]],
+  reporter: [["list"], ["allure-playwright", { outputFolder: "allure-results" }],],
   use: {
     baseURL: "http://localhost:8080/api/v3",
     extraHTTPHeaders: {
