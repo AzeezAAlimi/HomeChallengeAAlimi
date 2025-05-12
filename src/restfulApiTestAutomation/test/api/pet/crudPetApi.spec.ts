@@ -25,9 +25,18 @@ test("Update - PUT /pet", async ({ request }) => {
     data: petTestData.updatedPet,
   });
   expect(response.status()).toBe(200);
+  const body = await response.json();
+  expect(body.status).toBe(petTestData.updatedPet.status);
 });
 
 test("Delete - DELETE /pet/{id}", async ({ request }) => {
   const response = await request.delete(`${baseUrl}/pet/${petId}`);
   expect(response.status()).toBe(200);
 });
+
+test("Read after Delete - GET /pet/{id}", async ({ request }) => {
+  const response = await request.get(`${baseUrl}/pet/${petId}`);
+  expect(response.status()).toBe(404);
+});
+
+
