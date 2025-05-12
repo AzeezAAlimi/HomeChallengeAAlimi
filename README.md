@@ -181,13 +181,3 @@ https://azeezaalimi.github.io/HomeChallengeAAlimi/docs/api-e2e/index.html
 ![Allure Report 2](src/restfulApiTestAutomation/images/allure-report-api-2.png)
 
 ---
-
-## Prerequisites
-
-- Node.js (LTS)
-- Java JDK 17+
-- Android Studio
-- Appium
-- Docker (for API server)
-
----
