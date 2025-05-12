@@ -177,6 +177,8 @@ npx allure open reports/api-e2e
 
 Allure report is hosted via GitHub Pages:
 https://azeezaalimi.github.io/HomeChallengeAAlimi/docs/api-e2e/index.html
+(src/restfulApiTestAutomation/images/allure-report-api-1.png)
+(src/restfulApiTestAutomation/images/allure-report-api-2.png)
 
 ---
 
