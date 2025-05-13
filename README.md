@@ -1,6 +1,8 @@
 # N26 Home Challenge
 
-This repository contains the exploratory testing session, mobile test automation framework for the Monefy Android application, and a RESTful API test automation suite. It includes setup instructions, implementation details, and guidance on running the tests locally.
+This repository contains the exploratory testing session, mobile test automation framework for the Monefy Android application, and a RESTful API test automation suite. It includes setup instructions, implementation details, and guidance on running the tests locally. 
+
+Update: After completing the API test suite using Playwright, I implemented the same tests in Rest Assured to demonstrate my adaptability and eagerness to learn new tools and frameworks.
 
 ---
 

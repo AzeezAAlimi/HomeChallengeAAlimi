@@ -12,7 +12,7 @@ public class PetCrudTests {
 
     @BeforeClass
     public void setup() {
-        RestAssured.baseURI = "https://petstore.swagger.io/v3";
+        RestAssured.baseURI = "https://petstore.swagger.io/v2";
     }
 
     @Test(priority = 1)
