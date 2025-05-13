@@ -183,3 +183,7 @@ https://azeezaalimi.github.io/HomeChallengeAAlimi/docs/api-e2e/index.html
 ![Allure Report 2](src/restfulApiTestAutomation/images/allure-report-api-2.png)
 
 ---
+
+## RESTful API Test Automation (Bonus)
+
+![Terminal Report ](src/restfulApiTestAutomation(RestAssured-Bonus)/images/report-api-1.png)  
