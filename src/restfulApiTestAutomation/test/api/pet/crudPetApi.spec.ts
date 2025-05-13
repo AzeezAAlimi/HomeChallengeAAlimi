@@ -32,6 +32,9 @@ test("Update - PUT /pet", async ({ request }) => {
 test("Delete - DELETE /pet/{id}", async ({ request }) => {
   const response = await request.delete(`${baseUrl}/pet/${petId}`);
   expect(response.status()).toBe(200);
+  const body = await response.text()
+  console.log(body)
+  expect(body).toBe("Pet deleted")
 });
 
 test("Read after Delete - GET /pet/{id}", async ({ request }) => {
